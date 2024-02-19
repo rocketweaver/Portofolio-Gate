@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #131432;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+h1, #brand span, h2 {
+    font-family: 'Lora';
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+#brand-container {
+    padding: 40px 0;
+}
+
+#brand {
+    color: white;
+    font-size: 3vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+#brand > span {
+    color: #C55050;
+    font-size: 2vw;
+}
+
+#brand > img {
+    width: 2.5vw;
+}
+
+nav {
+    padding: 20px 80px;
+    background: #080924;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    width: 18%;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #868686;
+}
+
+.socmed-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#instagram {
+    margin-right: 20px;
+}
+
+.cover {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/liquid.png');
+    background-size: cover;
+}
+
+main {
+    padding-bottom: 10vh;
+}
+
+.article-container {
+    width: 65%;
+}
+
+article {
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.17);
+    min-height: 400px;
+    background: white;
+    padding: 0 0 40px 0;
+}
+
+#introduction {
+    margin-top: -100px;
+    margin-bottom: 80px;
+}
+
+.article-img {
+    height: 200px;
+}
+
+.article-title {
+    font-size: 2vw;
+    text-align: center;
+}
+
+article p {
+    margin-top: 30px;
+}
+
+.article-content {
+    width: 100%;
+    padding: 60px 100px 80px 100px;
+}
+
+#introduction > .article-img {
+    background: url('../img/me_liquid.png');
+    background-position-y: center;
+    background-size: cover;
+}
+
+#motivation > .article-img {
+    background: url('../img/red_sky.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#motivation p {
+    margin-top: 40px;
+}
+
+#faq {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.faq-title {
+    color: #5F5F5F;
+    font-size: 2vw;
+    margin-bottom: 40px;
+}
+
+.question {
+    width: 100%;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.17);
+    margin-bottom: 40px;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.question-btn {
+    background: white;
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d3d3d3;
+}
+
+.question-content {
+    width: 100%;
+    color: #3d3d3d;
+    background: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+    max-height: 0; 
+    transition: all 0.3s ease;
+}
+
+.question-content p {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.expand-question {
+    max-height: 1000px;
+    padding: 20px 40px 50px 40px;
+}
+
+.question-content.expand-question p {
+    opacity: 1;
+}
+
+
+.expand-question {
+    transform: scaleY(1);
+}
+
+.accordion-arrow {
+    width: 30px;
+    transition: .3s ease-in-out;
+}
+
+.rotate-arrow {
+    transform: rotateZ(180deg);
+}
+
+aside {
+    width: 30%;
+    padding-top: 80px;
+}
+
+.aside-title {
+    color: #5F5F5F;
+    font-size: 2vw;
+}
+
+.main-portfolio p {
+    margin-top: 20px;
+    color: #6e6e6e;
+}
+
+.main-portfolio a {
+    margin-top: 15px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+.aside-picture {
+    width: 30%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.aside-link {
+    display: block;
+    color: rgb(56, 56, 199);
+}
+
+.arrow-link {
+    position: relative;
+    margin-left: 10px;
+    animation: shaky .5s ease-in-out infinite;
+}
+
+@keyframes shaky {
+    0%{top: 1px;}
+    50%{top: -1px;}
+    100%{top: 1px}
+}
+
+aside section {
+    margin-bottom: 40px;
+}
+
+.other-portfolio a {
+    display: block;
+    margin-top: 10px;
+}
+
+footer {
+    background: #131432;
+    color: white;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1430px) {
+    .nav-list {
+        width: 40%;
+    }
+
+    .aside-picture {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    #brand {
+        font-size: 10vw;
+    }
+
+    .nav-list {
+        width: 50%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .article-container, aside {
+        width: 100%;
+    }
+
+    .article-title, .faq-title, .aside-title {
+        font-size: 4vw;
+    }
+
+    p, .aside-link {
+        font-size: 14px;
+    }
+
+    .question-title {
+        font-size: 14px;
+    }
+
+    .accordion-arrow {
+        width: 18px;
+    }
+
+    .expand-question {
+        padding-bottom: 60px;
+    }
+
+    .article-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        position: relative;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 80px;
+        background: #04051a;
+        height: 60px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform .3s ease-in-out;
+    }
+
+    .nav-link {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .show-nav {
+        transform: scaleY(1);
+    }
+
+    .show-link {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    .container, #brand-container, nav {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .article-title, .faq-title, .aside-title {
+        font-size: 6vw;
+    }
+
+    p, .aside-link {
+        font-size: 12px;
+    }
+
+    .question-title {
+        font-size: 12px;
+    }
+}
